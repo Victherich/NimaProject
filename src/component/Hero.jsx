@@ -33,11 +33,10 @@ console.log(heroSlide)
                         <div className='HeroMaskTextWrap'>
                         <div className='HeroMaskTextLeft'>
                         <h1>NIMA</h1>
-                        <h2>Geo-Enironmental and Real Estate services</h2>
+                        <h2>Geo-Environmental and Real Estate services</h2>
                         </div>
-                        <div className='HeroMaskTextRight animate__animated animate__slideInRight'>
+                        <div className='HeroMaskTextRight animate__animated animate__slideInLeft'>
                         <p>"Unlock the doorway to sustainable living with Nima Geo: where environmental consciousness meets exceptional real estate solutions."</p>
-                 
                         </div>
                         </div>
                         </div>
@@ -50,9 +49,9 @@ console.log(heroSlide)
         <div className='HeroMaskTextWrap'>
         <div className='HeroMaskTextLeft'>
                         <h1>NIMA</h1>
-                        <h2>Geo-Enironmental and Real Estate services</h2>
+                        <h2>Geo-Environmental and Real Estate services</h2>
                         </div>
-                        <div className='HeroMaskTextRight animate__animated animate__slideInRight'>
+                        <div className='HeroMaskTextRight animate__animated animate__slideInLeft'>
                         <p>"Experience a world where nature and luxury intertwine seamlessly – welcome to Nima Geo Environmental and Real Estate Services."</p>
                  
                         </div>
@@ -67,9 +66,9 @@ console.log(heroSlide)
         <div className='HeroMaskTextWrap'>
         <div className='HeroMaskTextLeft'>
                         <h1>NIMA</h1>
-                        <h2>Geo-Enironmental and Real Estate services</h2>
+                        <h2>Geo-Environmental and Real Estate services</h2>
                         </div>
-                        <div className='HeroMaskTextRight animate__animated animate__slideInRight'>
+                        <div className='HeroMaskTextRight animate__animated animate__slideInLeft'>
                         <p>"Discover a sanctuary of harmony between urban living and ecological preservation – Nima Geo invites you to redefine your lifestyle."</p>
                  
                         </div>
@@ -84,9 +83,9 @@ console.log(heroSlide)
         <div className='HeroMaskTextWrap'>
         <div className='HeroMaskTextLeft'>
                         <h1>NIMA</h1>
-                        <h2>Geo-Enironmental and Real Estate services</h2>
+                        <h2>Geo-Environmental and Real Estate services</h2>
                         </div>
-                        <div className='HeroMaskTextRight animate__animated animate__slideInRight'>
+                        <div className='HeroMaskTextRight animate__animated animate__slideInLeft'>
                         <p>"Embark on a journey where every home is a testament to our commitment to environmental stewardship and unparalleled comfort. Welcome to Nima Geo."</p>
                  
                         </div>
