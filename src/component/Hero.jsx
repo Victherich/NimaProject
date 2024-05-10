@@ -36,7 +36,7 @@ console.log(heroSlide)
                         <h2>Geo-Environmental and Real Estate services</h2>
                         </div>
                         <div className='HeroMaskTextRight animate__animated animate__slideInLeft'>
-                        <p>"Unlock the doorway to sustainable living with Nima Geo: where environmental consciousness meets exceptional real estate solutions."</p>
+                        <p>"Unlock the doorway to sustainable living with Nima Geo."</p>
                         </div>
                         </div>
                         </div>
@@ -52,7 +52,7 @@ console.log(heroSlide)
                         <h2>Geo-Environmental and Real Estate services</h2>
                         </div>
                         <div className='HeroMaskTextRight animate__animated animate__slideInLeft'>
-                        <p>"Experience a world where nature and luxury intertwine seamlessly – welcome to Nima Geo Environmental and Real Estate Services."</p>
+                        <p>"Experience a world where nature and luxury intertwine."</p>
                  
                         </div>
         </div>
@@ -69,7 +69,7 @@ console.log(heroSlide)
                         <h2>Geo-Environmental and Real Estate services</h2>
                         </div>
                         <div className='HeroMaskTextRight animate__animated animate__slideInLeft'>
-                        <p>"Discover a sanctuary of harmony between urban living and ecological preservation – Nima Geo invites you to redefine your lifestyle."</p>
+                        <p>"Discover harmony between urban living and ecological preservation."</p>
                  
                         </div>
         </div>
@@ -86,7 +86,7 @@ console.log(heroSlide)
                         <h2>Geo-Environmental and Real Estate services</h2>
                         </div>
                         <div className='HeroMaskTextRight animate__animated animate__slideInLeft'>
-                        <p>"Embark on a journey where every home is a testament to our commitment to environmental stewardship and unparalleled comfort. Welcome to Nima Geo."</p>
+                        <p>"Every home is a testament to our environmental stewardship."</p>
                  
                         </div>
         </div>
