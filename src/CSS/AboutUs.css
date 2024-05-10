@@ -1,0 +1,218 @@
+.AboutUsWrap{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(240, 240, 255);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.AboutUsHeaderWrap{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-top: 120px;
+    padding-bottom: 50px;
+    background-image: url("../Images/team.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* z-index: ; */
+}
+
+.AboutUsHeaderWrap::before{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.7);
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  z-index: 0;
+}
+
+.AboutUsHeaderWrap h1{
+    font-size: 4rem;
+    /* color: purple; */
+    color: rgba(0, 0, 255, 0.6);
+    z-index: 1;
+}
+
+
+.about-us {
+    padding: 50px;
+  }
+
+
+  .WhoWeAreAndDoWrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 100px;
+  }
+
+  .WhoWeAreAndDoImgWrap{
+    width: 50%;
+    height: auto;
+  }
+
+  .WhoWeAreAndDoImgWrap img{
+    width: 100%;
+    height: auto;
+  }
+
+  .WhoWeAreAndDo{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+  }
+
+  .WhoWeAreAndDo h2{
+    color: rgba(0, 0, 255, 0.5);
+  }
+
+  .WhoWeAreAndDo p{
+    
+  }
+
+  .WhoWeAreAndDo p span{
+    color: blue;
+  }
+
+ 
+  
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .section h4{
+    color: rgba(0, 0, 255, 0.5);
+    text-align: center;
+  }
+
+  .section h2{
+    color: rgba(0, 0, 255, 0.5);
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .section p{
+    text-align: center;
+    padding: 0px 50px;
+  }
+  
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    width: 100%;
+  }
+  
+  .team-member {
+    width: calc(25% - 20px); /* Adjust width according to the number of team members */
+    margin:30px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .team-member p{
+    text-align: center;
+    color: blue;
+    font-style: italic;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .overlay.active {
+    opacity: 1;
+  }
+  
+  .overlay p {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+
+  .ContactUsNowWrap {
+    margin: 20px; /* Add margin */
+    text-align: center;
+}
+
+.ContactUsNowWrap h1 {
+    cursor: pointer;
+    font-size: 1.5rem; /* Adjust font size */
+    color: rgba(0, 0, 255, 0.7); /* Change color */
+    transition: 350ms;
+    animation: animation1 5s infinite;
+}
+
+@keyframes animation1 {
+    0%{transform: scaleX(1.1);}
+    25%{transform: scaleX(1.2);}
+    50%{transform: scaleX(1.3);}
+    75%{transform: scaleX(1.4);}
+    100%{transform: scaleX(1.5);}
+}
+
+@media screen and (max-width:884px) {
+    .team-member{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:834px) {
+    .WhoWeAreAndDoWrap{
+        flex-direction: column-reverse;
+        padding: 50px;
+    }
+    .WhoWeAreAndDoImgWrap, .WhoWeAreAndDo{
+        width: 100%;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .team-member{
+        width: 100%;
+    }
+    .section p{
+    padding: 1px;
+    }
+    .WhoWeAreAndDoWrap{
+        padding: 0px;
+    }
+    .about-us{
+        padding: 20px;
+    }
+}
