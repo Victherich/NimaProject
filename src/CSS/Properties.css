@@ -151,15 +151,20 @@
     height: auto;
     margin: 20px;
     border: 1px solid rgba(0, 0, 255, 0.4);
-    /* background-color: red; */
-    /* border: 1px solid #007bff; */
-
-    /* border:1px solid rgba(255, 255, 255, 0.5); */
     border-radius: 11px;
-    /* background-color: rgba(0, 0, 255, 0.1); */
     background-color: rgba(255, 255, 255, 0.8);
-    /* background-color: red; */
-    /* padding: 1px; */
+  } 
+
+  .SearchBarWrapHeroPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: auto;
+    margin: 20px;
+    border: 1px solid rgba(0, 0, 255, 0.1);
+    border-radius: 11px;
+    background-color: rgba(255, 255, 255, 0.8);
   }
   
 
@@ -171,10 +176,21 @@
     border: none;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 00);
-    /* background-color: rgba(0, 0, 255, 0.1); */
-    /* background-color: blue; */
-    padding-left: 20px;
+    padding: 17px 20px ;
   }
+
+  
+  .SearchBarWrapHeroPage input{
+    width: 85%;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 00);
+    padding: 17px 20px ;
+  }
+
 
   .SearchBarWrap p{
     width: 15%;
@@ -182,41 +198,60 @@
     /* font-weight: bold; */
      /* background-color: #007bff; */
      background-color: rgba(0, 0, 255, 0.4);
+     /* background-color: rgba(0, 0, 0, 0.6); */
     /* background: linear-gradient(to bottom, rgb(179, 179, 231,0.5), rgba(0, 0, 255, 0.7)); */
     border: none;
     border-radius: 0px 10px 10px 0px;
     cursor: pointer;
     transform: scale(1);
     transition: 350ms;
-    /* font-size: 1rem; */
-    padding: 10px;
+    padding: 17px 10px;
+  }
+
+  .SearchBarWrapHeroPage p{
+    width: 15%;
+    color: white;
+    /* font-weight: bold; */
+     /* background-color: #007bff; */
+     /* background-color: rgba(0, 0, 255, 0.4); */
+     background-color: rgba(0, 0, 0, 0.6);
+    /* background: linear-gradient(to bottom, rgb(179, 179, 231,0.5), rgba(0, 0, 255, 0.7)); */
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 350ms;
+    padding: 17px 10px;
   }
 
   .SearchBarWrap p:hover{
-    /* background-color: #0056b3; */
     font-weight: bold;
   }
 
-  .SearchBarWrap button:active{
-    transform: scale(0.9);
+  .SearchBarWrap p:active{
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .SearchBarWrapHeroPage p:hover{
+    font-weight: bold;
+  }
+
+  .SearchBarWrapHeroPage p:active{
+    background-color: rgba(0, 0, 0, 0.9);
   }
 
  
 
 
   @media screen and (max-width:884px) {
-    .SearchBarWrap{
+    .SearchBarWrap, .SearchBarWrapHeroPage{
       width: 58%;
     }
+  
     .PropertiesWrap{
       padding: 90px 20px;
     }
-    .SearchBarWrap input{
-
-    }
-    .SearchBarWrap p{
-
-    }
+ 
   }
   
   @media screen and (max-width: 768px) {
@@ -231,13 +266,13 @@
   }
 
   @media screen and (max-width:428px) {
-    .SearchBarWrap{
+    .SearchBarWrap, .SearchBarWrapHeroPage{
       width: 85%;
     }
-    .SearchBarWrap input{
+    .SearchBarWrap input, .SearchBarWrapHeroPage input{
         width: 80%;
     }
-    .SearchBarWrap p{
+    .SearchBarWrap p, .SearchBarWrapHeroPage p{
       width: 20%;
     }
     .PropertiesWrap{
@@ -251,7 +286,7 @@
     .PropertiesWrap{
       padding: 90px 30px;    
     }
-    .SearchBarWrap{
+    .SearchBarWrap, .SearchBarWrapHeroPage{
       width: 90%;
     }
     .PropertiesWrap{
@@ -260,13 +295,13 @@
   }
 
   @media screen and (max-width: 320px) {
-    .SearchBarWrap{
+    .SearchBarWrap, .SearchBarWrapHeroPage{
       width: 90%;
     }
-    .SearchBarWrap input{
+    .SearchBarWrap input, .SearchBarWrapHeroPage input{
       width:75%;
     }
-    .SearchBarWrap p{
+    .SearchBarWrap p, .SearchBarWrapHeroPage p{
       width: 25%;
     }
   }

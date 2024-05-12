@@ -8,19 +8,23 @@ const SearchBar = () => {
     const {handleSearch,searchInputData,setSearchInputData}=useContext(Context)
 
     const handleNavigateAndSearch = async ()=>{
+      if  (searchInputData!==""){
+        
         await navigate("/properties")
         handleSearch()
+      }
+        
     }
   return (
     <div className='PropertySearchWrap'>
 
             
-            <div className='SearchBarWrap'>
+            <div className='SearchBarWrapHeroPage'>
               <input 
               type="text"
               value={searchInputData}
               onChange={(e)=>setSearchInputData(e.target.value)}
-              placeholder='Enter property name or location'/><p onClick={handleNavigateAndSearch}>Search</p>
+              placeholder='Property name or location'/><p onClick={handleNavigateAndSearch}>Search</p>
             </div>
            
         </div>

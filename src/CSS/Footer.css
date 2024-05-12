@@ -19,11 +19,13 @@
   .footer__logo h1 {
     font-size: 18px;
     /* margin: 10px; */
+    width: 250px;
   }
   
   .footer__contact p, .footer__social p {
     margin-bottom: 5px;
     font-size: 1.2rem;
+  
   }
   
   .footer__contact ul, .footer__social ul {
@@ -34,7 +36,9 @@
   
   .footer__contact li, .footer__social li {
     margin-bottom: 5px;
-    margin-right: 10px;
+    margin-right: 20px;
+    width: 250px;
+    /* padding: 0px 10px; */
   }
   
   .footer__social i {

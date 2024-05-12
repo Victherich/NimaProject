@@ -7,6 +7,7 @@ import Img3 from "../Images/house3.jpg"
 import Img4 from "../Images/house4.jpg"
 import {useNavigate} from 'react-router-dom'
 import { Context } from './Context';
+import Swal from "sweetalert2"
 
 
 
@@ -26,29 +27,30 @@ const Properties = () => {
 console.log(propertiesData2.length)
 
 
-        const Houses = [
-          Img1,
-          Img2,
-          Img3,
-          Img4
-        ];
-      
-        const [currentIndex, setCurrentIndex] = useState(0);
-      
-        useEffect(() => {
-          const interval = setInterval(() => {
-            setCurrentIndex(prevIndex => (prevIndex + 1) % Houses.length);
-          }, 5000); // Auto change House every 5 seconds
-          return () => clearInterval(interval);
-        }, [Houses.length]);
-      
-        const nextHouse = () => {
-          setCurrentIndex(prevIndex => (prevIndex + 1) % Houses.length);
-        };
-      
-        const prevHouse = () => {
-          setCurrentIndex(prevIndex => (prevIndex - 1 + Houses.length) % Houses.length);
-        };
+const [imageNumbers, setImageNumbers] = useState(propertiesData.map(() => 0));
+
+useEffect(() => {
+    const intervalId = setInterval(() => {
+        setImageNumbers(prevNumbers => prevNumbers.map((number, index) => (number + 1) % 4));
+    }, 5000);
+    return () => clearInterval(intervalId);
+}, []);
+
+const nextHouse = (index) => {
+    setImageNumbers(prevNumbers => {
+        const updatedNumbers = [...prevNumbers];
+        updatedNumbers[index] = (updatedNumbers[index] + 1) % 4;
+        return updatedNumbers;
+    });
+};
+
+const prevHouse = (index) => {
+    setImageNumbers(prevNumbers => {
+        const updatedNumbers = [...prevNumbers];
+        updatedNumbers[index] = (updatedNumbers[index] - 1 + 4) % 4;
+        return updatedNumbers;
+    });
+};
 
   return (
     <div className='PropertiesWrap'>
@@ -62,7 +64,7 @@ console.log(propertiesData2.length)
               type="text"
               value={searchInputData}
               onChange={(e)=>setSearchInputData(e.target.value)}
-              placeholder='Enter property name or location'/><p onClick={handleSearch}>Search</p>
+              placeholder='Property name or location'/><p onClick={handleSearch}>Search</p>
             </div>
             {resultNumber!==null&&originalDataShow===true?<p style={{color:"#007bff",
             fontWeight:"500",
@@ -82,16 +84,22 @@ console.log(propertiesData2.length)
         </div>
         <div className="container">
 
-      {originalDataShow===true?    propertiesData2.map((data)=>(<div className="card" key={data.id}>
+      {originalDataShow===true?    propertiesData2.map((data,index)=>(<div className="card" key={data.id}>
       <div className="carousel">
-        <div className="carousel-inner">
-          {Houses.map((House, idx) => (
-            <img key={idx} src={House} alt={`Property House ${idx + 1}`} style={{ display: idx === currentIndex ? 'block' : 'none' }} />
-          ))}
-        </div>
-        <button className="prev" onClick={prevHouse}>&#10094;</button>
-        <button className="next" onClick={nextHouse}>&#10095;</button>
-      </div>
+      <div className="carousel-inner">
+                                <img
+                                    src={
+                                        imageNumbers[index] === 0 ? data.pic1 :
+                                            imageNumbers[index] === 1 ? data.pic2 :
+                                                imageNumbers[index] === 2 ? data.pic3 :
+                                                    data.pic4
+                                    }
+                                    alt="House"
+                                />
+                            </div>
+                            <button className="prev" onClick={() => prevHouse(index)}>&#10094;</button>
+                            <button className="next" onClick={() => nextHouse(index)}>&#10095;</button>
+                        </div>
       <div className="property-details">
         <h3>{data.propertyType}</h3>
         <p>Location: {data.propertyLocation}</p>
@@ -103,16 +111,22 @@ console.log(propertiesData2.length)
 
     :
 
-      propertiesData.map((data)=>(<div className="card" key={data.id}>
+      propertiesData.map((data,index)=>(<div className="card" key={data.id}>
       <div className="carousel">
-        <div className="carousel-inner">
-          {Houses.map((House, idx) => (
-            <img key={idx} src={House} alt={`Property House ${idx + 1}`} style={{ display: idx === currentIndex ? 'block' : 'none' }} />
-          ))}
-        </div>
-        <button className="prev" onClick={prevHouse}>&#10094;</button>
-        <button className="next" onClick={nextHouse}>&#10095;</button>
-      </div>
+      <div className="carousel-inner">
+                                <img
+                                    src={
+                                        imageNumbers[index] === 0 ? data.pic1 :
+                                            imageNumbers[index] === 1 ? data.pic2 :
+                                                imageNumbers[index] === 2 ? data.pic3 :
+                                                    data.pic4
+                                    }
+                                    alt="House"
+                                />
+                            </div>
+                            <button className="prev" onClick={() => prevHouse(index)}>&#10094;</button>
+                            <button className="next" onClick={() => nextHouse(index)}>&#10095;</button>
+                        </div>
       <div className="property-details">
         <h3>{data.propertyType}</h3>
         <p>Location: {data.propertyLocation}</p>
