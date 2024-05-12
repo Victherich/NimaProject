@@ -224,7 +224,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px ;
     padding: 5%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 .FormSubmitUi button{
@@ -236,8 +236,8 @@
     cursor: pointer;
     transform: scale(1);
     transition: 350ms;
-    font-size: 1.5rem;
-    padding: 20px;
+    font-size: 1rem;
+    padding: 15px;
     margin: 20px;
     /* width: 40%;
     height: 25%; */

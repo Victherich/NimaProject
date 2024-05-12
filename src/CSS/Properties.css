@@ -5,7 +5,7 @@
     height: auto;
     justify-content: space-between;
     align-items: center;
-    padding: 90px 50px;
+    padding: 100px 50px;
     background-color: rgb(240, 240, 255); /* Fallback background color */
     background-image: url("../Images/06532644919c1c-modern-beautifully-finished-home-semi-detached-duplexes-for-sale-ajah-lagos.jpeg");
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@
 
 
 .PropertiesWrap h1{
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 50px;
     color: rgba(0, 0, 255, 0.5);
 }
@@ -32,6 +32,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 60px;
+    padding-top:50px;
   }
   
   .card {
@@ -40,6 +41,7 @@
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
   }
   
   .carousel {
@@ -84,6 +86,7 @@
   
   .property-details {
     padding: 15px;
+   
   }
   
   .property-details h3 {
@@ -92,6 +95,22 @@
   
   .property-details p {
     margin: 5px 0;
+  }
+
+  .property-details p:nth-child(4) {
+    margin: 5px 5px;
+    color: red;
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 5px;
+    background-color: white;
+    color: rgba(0, 0, 255, 0.7);
+    font-weight: 500;
+    /* font-style: italic; */
+    border-radius: 5px;
+    font-size: 0.9rem;
+
   }
   
   .property-details button {
@@ -107,6 +126,98 @@
   .property-details button:hover {
     background-color: #0056b3;
   }
+
+
+  .PropertySearchWrap{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: red; */
+  }
+
+  .PropertySearchWrap h2{
+    color: rgba(0, 0, 255, 0.5);
+    text-align: center;
+  }
+
+  .SearchBarWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: auto;
+    margin: 20px;
+    border: 1px solid rgba(0, 0, 255, 0.4);
+    /* background-color: red; */
+    /* border: 1px solid #007bff; */
+
+    /* border:1px solid rgba(255, 255, 255, 0.5); */
+    border-radius: 11px;
+    /* background-color: rgba(0, 0, 255, 0.1); */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* background-color: red; */
+    /* padding: 1px; */
+  }
+  
+
+  .SearchBarWrap input{
+    width: 85%;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 00);
+    /* background-color: rgba(0, 0, 255, 0.1); */
+    /* background-color: blue; */
+    padding-left: 20px;
+  }
+
+  .SearchBarWrap p{
+    width: 15%;
+    color: white;
+    /* font-weight: bold; */
+     /* background-color: #007bff; */
+     background-color: rgba(0, 0, 255, 0.4);
+    /* background: linear-gradient(to bottom, rgb(179, 179, 231,0.5), rgba(0, 0, 255, 0.7)); */
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 350ms;
+    /* font-size: 1rem; */
+    padding: 10px;
+  }
+
+  .SearchBarWrap p:hover{
+    /* background-color: #0056b3; */
+    font-weight: bold;
+  }
+
+  .SearchBarWrap button:active{
+    transform: scale(0.9);
+  }
+
+ 
+
+
+  @media screen and (max-width:884px) {
+    .SearchBarWrap{
+      width: 58%;
+    }
+    .PropertiesWrap{
+      padding: 90px 20px;
+    }
+    .SearchBarWrap input{
+
+    }
+    .SearchBarWrap p{
+
+    }
+  }
   
   @media screen and (max-width: 768px) {
     .container {
@@ -115,13 +226,48 @@
     }
   
     .card {
-      width: 100%;
+      /* width: ; */
     }
   }
+
+  @media screen and (max-width:428px) {
+    .SearchBarWrap{
+      width: 85%;
+    }
+    .SearchBarWrap input{
+        width: 80%;
+    }
+    .SearchBarWrap p{
+      width: 20%;
+    }
+    .PropertiesWrap{
+      padding: 90px 0px;
+    }
+  }
+
+
 
   @media screen and (max-width: 360px) {
     .PropertiesWrap{
       padding: 90px 30px;    
+    }
+    .SearchBarWrap{
+      width: 90%;
+    }
+    .PropertiesWrap{
+      padding: 90px 0px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .SearchBarWrap{
+      width: 90%;
+    }
+    .SearchBarWrap input{
+      width:75%;
+    }
+    .SearchBarWrap p{
+      width: 25%;
     }
   }
   

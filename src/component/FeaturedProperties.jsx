@@ -10,8 +10,13 @@ import { Context } from './Context';
 
 
 
-const Properties = () => {
+const FeaturedProperties = () => {
     const navigate = useNavigate();
+
+    //handling navigate to properties page
+    const handleNavigate = ()=>{
+        navigate("/properties")
+    }
 
     // receiving functions and state from context
     const {handleSearch,
@@ -52,37 +57,11 @@ console.log(propertiesData2.length)
 
   return (
     <div className='PropertiesWrap'>
-        <h1>Properties</h1>
-        <div className='PropertySearchWrap'>
-            <h2>Search Available Properites:</h2>
+        <h1>Featured Properties</h1>
 
-
-            <div className='SearchBarWrap'>
-              <input 
-              type="text"
-              value={searchInputData}
-              onChange={(e)=>setSearchInputData(e.target.value)}
-              placeholder='Enter property name or location'/><p onClick={handleSearch}>Search</p>
-            </div>
-            {resultNumber!==null&&originalDataShow===true?<p style={{color:"#007bff",
-            fontWeight:"500",
-            cursor:"pointer",
-            marginTop:"10px",
-            marginBottom:"10px",
-            fontSize:"1.2rem"}}>Search Result: Found ({resultNumber}) Properties</p>:""}
-
-            {showClearSearch&&<p style={{color:"#007bff",
-            fontStyle:"italic",
-            fontWeight:"bold",
-            cursor:"pointer",
-            marginTop:"10px",
-            marginBottom:"30px",
-            textDecoration:"underline",
-            fontSize:"1.2rem"}} onClick={handleClearSearch}>X-Clear Search</p>}
-        </div>
         <div className="container">
 
-      {originalDataShow===true?    propertiesData2.map((data)=>(<div className="card" key={data.id}>
+      {propertiesData.slice(-3).map((data)=>(<div className="card" key={data.id}>
       <div className="carousel">
         <div className="carousel-inner">
           {Houses.map((House, idx) => (
@@ -98,33 +77,18 @@ console.log(propertiesData2.length)
         <p>Price: {data.propertyAmount}</p>
         <p>{data.category}</p>
         <button onClick={() => navigate("/contactus")}>Contact Agent</button>
+        {/* <button style={{marginLeft:"50px",backgroundColor:"transparent",border:"1px solid blue",color:"blue"}}>View Property</button> */}
       </div>
-    </div>))
+    </div>))}
 
-    :
 
-      propertiesData.map((data)=>(<div className="card" key={data.id}>
-      <div className="carousel">
-        <div className="carousel-inner">
-          {Houses.map((House, idx) => (
-            <img key={idx} src={House} alt={`Property House ${idx + 1}`} style={{ display: idx === currentIndex ? 'block' : 'none' }} />
-          ))}
-        </div>
-        <button className="prev" onClick={prevHouse}>&#10094;</button>
-        <button className="next" onClick={nextHouse}>&#10095;</button>
-      </div>
-      <div className="property-details">
-        <h3>{data.propertyType}</h3>
-        <p>Location: {data.propertyLocation}</p>
-        <p>Price: {data.propertyAmount}</p>
-        <p>{data.category}</p>
-        <button onClick={() => navigate("/contactus")}>Contact Agent</button>
-      </div>
-    </div>))
-      }
+    <div className='ContactUsNowWrap'>
+                <h1 onClick={handleNavigate} style={{margin:"0",fontStyle:"italic", fontWeight:"500"}}>View all Properites...</h1>
+              </div>
+    
     </div>
     </div>
   )
 }
 
-export default Properties
+export default FeaturedProperties

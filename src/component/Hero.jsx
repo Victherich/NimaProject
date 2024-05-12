@@ -9,6 +9,7 @@ import HeroImg1 from "../Images/house1.webp"
 import HeroImg2 from "../Images/house2.jpg"
 import HeroImg3 from "../Images/house3.jpg"
 import HeroImg4 from "../Images/house4.jpg"
+import SearchBar from './SearchBar'
 
 
 const Hero = () => {
@@ -35,6 +36,10 @@ console.log(heroSlide)
                         <h1>NIMA</h1>
                         <h2>Geo-Environmental and Real Estate services</h2>
                         </div>
+                        {/* <div className='HeroMaskCenter'>
+                                <input type="text" placeholder='Search'/> <button>Search</button>
+                        </div> */}
+                        <SearchBar/>
                         <div className='HeroMaskTextRight animate__animated animate__slideInLeft'>
                         <p>"Unlock the doorway to sustainable living with Nima Geo."</p>
                         </div>
@@ -51,6 +56,7 @@ console.log(heroSlide)
                         <h1>NIMA</h1>
                         <h2>Geo-Environmental and Real Estate services</h2>
                         </div>
+                        <SearchBar/>
                         <div className='HeroMaskTextRight animate__animated animate__slideInLeft'>
                         <p>"Experience a world where nature and luxury intertwine."</p>
                  
@@ -68,6 +74,7 @@ console.log(heroSlide)
                         <h1>NIMA</h1>
                         <h2>Geo-Environmental and Real Estate services</h2>
                         </div>
+                        <SearchBar/>
                         <div className='HeroMaskTextRight animate__animated animate__slideInLeft'>
                         <p>"Discover harmony between urban living and ecological preservation."</p>
                  
@@ -85,6 +92,7 @@ console.log(heroSlide)
                         <h1>NIMA</h1>
                         <h2>Geo-Environmental and Real Estate services</h2>
                         </div>
+                        <SearchBar/>
                         <div className='HeroMaskTextRight animate__animated animate__slideInLeft'>
                         <p>"Every home is a testament to our environmental stewardship."</p>
                  
@@ -94,6 +102,7 @@ console.log(heroSlide)
                 </div>
                 
         </div>}
+        
     </div>
   )
 }

@@ -12,6 +12,7 @@ import ScrollToTop from "./component/ScrollToTop"
 import Properties from './component/Properties';
 
 
+
 const App = () => {
   return (
    <BrowserRouter>
@@ -23,7 +24,8 @@ const App = () => {
           <Route path="/contactus" element={<ContactUs/>}/>
           <Route path="/ourservices" element={<OurServices/>}/>
           <Route path="/properties" element={<Properties/>}/>
-      </Routes>
+             
+        </Routes>
       <Footer/>
    </BrowserRouter>
     

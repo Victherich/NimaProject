@@ -6,6 +6,7 @@ import OurServices from '../component/OurServices'
 import Properties from '../component/Properties'
 import About from '../component/About'
 import "../CSS/LandingPage.css"
+import FeaturedProperties from '../component/FeaturedProperties'
 
 const LandingPage = () => {
   return (
@@ -13,7 +14,7 @@ const LandingPage = () => {
         
         <Hero/>
         <OurServices/>
-        <Properties/>
+        <FeaturedProperties/>
         <About/>
         
     </div>

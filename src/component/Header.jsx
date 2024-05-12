@@ -3,7 +3,8 @@ import '../CSS/Header.css'
 import { Context } from './Context';
 import { NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import Logo from "../Images/Nima_Logo_dummy-removebg-preview.png"
+// import Logo from "../Images/Nima_Logo_dummy-removebg-preview.png"
+import Logo from "../Images/Nima Logo  1.jpg"
 import { FaBeer, FaFacebook, FaHamburger, FaInstagram, FaTwitter } from "react-icons/fa";
 import "animate.css"
 import { useRef } from 'react';
