@@ -7,6 +7,9 @@ import Properties from '../component/Properties'
 import About from '../component/About'
 import "../CSS/LandingPage.css"
 import FeaturedProperties from '../component/FeaturedProperties'
+import AdOns from '../component/AdOns'
+import Projects from '../component/Projects'
+import Gallery from '../component/Gallery'
 
 const LandingPage = () => {
   return (
@@ -14,7 +17,10 @@ const LandingPage = () => {
         
         <Hero/>
         <OurServices/>
+        {/* <AdOns/> */}
         <FeaturedProperties/>
+        <Projects/>
+        <Gallery/>
         <About/>
         
     </div>

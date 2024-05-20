@@ -1,0 +1,190 @@
+.Hero2Wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    /* background-image: url("../Images/house5.jpg"); */
+    background-position: center;
+    background-size: contain;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(0, 0, 255,0.1);
+    padding-top: 50px;
+}
+.Hero2{
+    display: flex;
+    width: 80%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    position:relative
+    /* background-color: lightgray; */
+}
+
+.Hero2 img{
+    width:100%;
+    height: 100%;
+}
+
+.Hero2Mask{
+    background-color: rgba(0, 0, 0, 0.1);
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Hero2MaskTextWrap{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+    
+    /* background-color: rebeccapurple; */
+}
+
+.Hero2MaskTextLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    /* height: 30%; */
+    flex-direction: column;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.Hero2MaskTextLeft h1{
+    font-size: 4rem;
+    /* font-style: italic; */
+    color:rgba(255, 255, 255, 0.9);
+    text-align: center;
+    
+}
+
+.Hero2MaskTextLeft h2{
+    font-size: 1rem;
+    color:rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+.Hero2MaskTextRight{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    /* height: 30%; */
+}
+
+.Hero2MaskTextRight p{
+    font-size: 1.5rem;
+    color: white;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgb(142, 142, 255); */
+    /* background-color: rgba(200, 200, 255, 0.5); */
+    /* border-radius: 10px; */
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0px 0px 5px black;
+}
+
+.CircleWrap{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    gap: 30px;
+}
+
+.Circle{
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+    border-radius: 50px;
+}
+
+.CircleActive{
+    width: 17px;
+    height: 17px;
+    background-color: rgba(0, 0, 255, 0.5);
+    border-radius: 50px;
+}
+
+
+@media screen and (max-width:834px) {
+    .Hero2{
+        /* height: 900px; */
+    }
+   .Hero2MaskTextWrap{
+    flex-direction: column;
+    width: 100%;
+   }
+   
+   .Hero2MaskTextLeft{
+    height:40%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+   }
+   .Hero2MaskTextRight{
+    height: 40%;
+    width: 80%;
+   }
+
+}
+
+@media screen and (max-width:428px) {
+    .Hero2{
+        height: 250px;
+    }
+    .Hero2MaskTextWrap{
+        gap: 0px;
+        margin-bottom: 100px;
+    }
+    
+    .Hero2MaskTextLeft{
+     /* height:40%; */
+     width: 100%;
+     text-align: center;
+     align-items: center;
+    }
+
+    .Hero2MaskTextLeft h1{
+        font-size: 2rem;
+    }
+    .Hero2MaskTextLeft h2{
+        /* font-size: 1.5rem; */
+        /* padding: 4px; */
+    }
+    .Hero2MaskTextRight{
+        /* display:     none; */
+     /* height: 40%; */
+     width: 80%;
+    }
+
+    .Hero2MaskTextRight p{
+        font-size: 1rem;
+        padding: 10px;
+    }
+ 
+ }
+
+ @media screen and (max-width:360px) {
+    .Hero2MaskTextRight p{
+        /* padding: 30px; */
+    }  
+ }

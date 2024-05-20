@@ -4,6 +4,8 @@ import "../CSS/ContactUs.css"
 import Logo from "../Images/Nima Logo  1.jpg"
 import { FaBackward, FaEraser } from 'react-icons/fa6'
 import { FaClosedCaptioning } from 'react-icons/fa'
+import { useForm, ValidationError } from '@formspree/react';
+import Swal from 'sweetalert2'
 
 
 const ContactUs = () => {
@@ -96,12 +98,65 @@ const handleLocation =()=>{
 
 
 useEffect(()=>{
-    if(formData.message!==""){
+    if(formData.phoneNumber.length>=0){
         setEnablealidatio(true)
     }
-},[[formData]])
+},[formData.phoneNumber])
+
+// useEffect(()=>{
+//         setEnablealidatio(true)
+// },[formData])
 
 
+//form submit by formspree
+const [state, handleSubmit] = useForm("mnqerjbz");
+
+
+const handleReload = ()=>{
+    const loadingAlert = Swal.fire({
+        title: "Loading",
+        text: "Please wait...",
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        showConfirmButton: false,
+        timer:1000
+      });
+
+      Swal.showLoading();
+
+    window.location.reload();
+}
+
+let loadingAlert;
+
+const handleSubmit2 = (e)=>{  
+    let loadingAlert = Swal.fire({
+        title: "Loading",
+        text: "Please wait...",
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        showConfirmButton: false,
+        // timer:2000
+      });
+      Swal.showLoading();
+    handleSubmit(e)
+}
+
+    
+    if (state.succeeded) {
+
+        loadingAlert=Swal.fire({icon:"success",showConfirmButton:false,timer:2000})
+
+        return<div className='FormSubmitUiWrap' >
+            
+        <div className='FormSubmitUi'style={{width:'100%',height:"100vh"}} >
+        <img src={Logo} alt="Logo"/>
+        <p>Your request has been submitted and one of our representatives shall surely get back to you as soon as possible. Thanks.</p>
+        <button onClick={handleReload}>Ok</button>
+        
+    </div>
+    </div> ;
+    }
 
   return (
     <div className='ContactUsWrap'>
@@ -112,12 +167,13 @@ useEffect(()=>{
         <div className='ContactUsBody'>
                 
                 <div className='ContactUsBodyLeft'>
-                    <form action="https://formsubmit.co/digitalpremiumtech@gmail.com" method="POST">
+                    {/* <form action="https://formsubmit.co/digitalpremiumtech@gmail.com" method="POST"> */}
+                    <form onSubmit={handleSubmit2}>
                         <input type="text" name="Order Name" value={formData.orderName} hidden/>
                         <label>
                             <div className='InputLabelChild'>
                                 <p>Enter Full Name:</p>
-                                <input type="text" name="Full Name" value={formData.fullName} onChange={(e)=>setFormData({...formData,fullName:e.target.value})} placeholder='Eg. John Ani' required/>
+                                <input id="fullName" type="text" name="Full Name" value={formData.fullName} onChange={(e)=>setFormData({...formData,fullName:e.target.value})} placeholder='Eg. John Ani' required/>
                             </div>
                             <p style={{ color: "red", fontSize: "small", fontStyle: "italic" }}>{fullNameError}</p>
                         </label>
@@ -125,7 +181,7 @@ useEffect(()=>{
                         <label>
                             <div className='InputLabelChild'>
                                 <p>Enter Email address:</p>
-                                <input type="text" name="Email" value={formData.email} onChange={(e)=>setFormData({...formData,email:e.target.value})} placeholder='example@gmail.com' required/>
+                                <input id="email" type="text" name="Email" value={formData.email} onChange={(e)=>setFormData({...formData,email:e.target.value})} placeholder='example@gmail.com' required/>
                             </div>
                             <p style={{ color: "red", fontSize: "small", fontStyle: "italic" }}>{emailError}</p>
                             </label>
@@ -133,7 +189,7 @@ useEffect(()=>{
                         <label>
                             <div className='InputLabelChild'>
                                 <p>Enter Phone number:</p>
-                                <input type="text" name='Phone Number' value={formData.phoneNumber} onChange={(e)=>setFormData({...formData,phoneNumber:e.target.value})} placeholder="eg 07063448446" required/>
+                                <input id="phoneNumber" type="text" name='Phone Number' value={formData.phoneNumber} onChange={(e)=>setFormData({...formData,phoneNumber:e.target.value})} placeholder="eg 07063448446" required/>
                             </div>    
                             <p style={{ color: "red", fontSize: "small", fontStyle: "italic" }}>{phoneNumberError}</p>
                         </label>
@@ -158,7 +214,7 @@ useEffect(()=>{
                         <div className='TextAreaWrap'>
                             <div className='InputLabelChild'>
                                 <p>Message (optional):</p>
-                                <textarea type="text" name="Message" value={formData.message} onChange={(e)=>setFormData({...formData,message:e.target.value})} placeholder='Please enter your message here'/>
+                                <textarea id="Message" type="text" name="Message" value={formData.message} onChange={(e)=>setFormData({...formData,message:e.target.value})} placeholder='Please enter your message here'/>
                             </div>
                             <p style={{ color: "red", fontSize: "small", fontStyle: "italic" }}>{messageError}</p>
                             </div>
@@ -170,7 +226,7 @@ useEffect(()=>{
                             <div className='FormSubmitUiWrap'>
                                 <div className='FormSubmitUi'>
                                 <p>You are about to submit your request and one of our representatives shall surely get back to you as soon as possible. Click on submit now and then expect our callback. Thanks.</p>
-                                <button type="submit">Submit Now</button>
+                                <button type="submit" disabled={state.submitting}>Submit Now</button>
                                 
                                 <p onClick={()=>setOpenSubmit(false)} style={{cursor:"pointer",fontWeight:"bold",color:"blue"}}>X</p>
                             </div>

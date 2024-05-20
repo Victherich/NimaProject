@@ -150,9 +150,9 @@ const FeaturedProperties = () => {
     return (
         <div className='PropertiesWrap'>
             <h1>Featured Properties</h1>
-            <div className="container">
+            <div className="PropertiesContainer">
                 {propertiesData.slice(-3).map((data, index) => (
-                    <div className="card" key={data.id}>
+                    <div className="PropertyCard" key={data.id}>
                         <div className="carousel">
                             <div className="carousel-inner">
                                 <img
@@ -169,18 +169,20 @@ const FeaturedProperties = () => {
                             <button className="next" onClick={() => nextHouse(index)}>&#10095;</button>
                         </div>
                         <div className="property-details">
-                            <h3>{data.propertyType}</h3>
-                            <p>Location: {data.propertyLocation}</p>
-                            <p>Price: {data.propertyAmount}</p>
-                            <p>{data.category}</p>
-                            <button onClick={() => navigate("/contactus")}>Contact Agent</button>
+                            <h3 style={{color:"rgba(0,0,255,0.7)"}}>{data.propertyType}</h3>
+                            <p>{data.bedrooms} bedroom</p>
+        <p>{data.state} {data.propertyLocation}</p>
+        <p>{data.category}</p>
+        <p>Price: {data.propertyAmount} NGN</p>
+                            <button onClick={() => navigate("/contactus")}>Contact now</button>
                         </div>
                     </div>
                 ))}
-                <div className='ContactUsNowWrap'>
-                    <h1 onClick={handleNavigate} style={{ margin: "0", fontStyle: "italic", fontWeight: "500" }}>View all Properites...</h1>
-                </div>
+                
             </div>
+            <div className='ContactUsNowWrap'>
+                    <h1 onClick={handleNavigate} style={{ margin: "0",marginTop:"30px", fontStyle: "italic", fontWeight: "500" }}>View all Properites...</h1>
+                </div>
         </div>
     );
 };

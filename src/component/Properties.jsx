@@ -8,6 +8,8 @@ import Img4 from "../Images/house4.jpg"
 import {useNavigate} from 'react-router-dom'
 import { Context } from './Context';
 import Swal from "sweetalert2"
+import SearchComponent from './SearchComponent';
+import SearchComponent2 from './SearchComponent2';
 
 
 
@@ -54,18 +56,19 @@ const prevHouse = (index) => {
 
   return (
     <div className='PropertiesWrap'>
-        <h1>Properties</h1>
+        <h1>All Properties</h1>
         <div className='PropertySearchWrap'>
-            <h2>Search Available Properites:</h2>
+            {/* <h2>Search Available Properites:</h2> */}
 
 
-            <div className='SearchBarWrap'>
+            {/* <div className='SearchBarWrap'>
               <input 
               type="text"
               value={searchInputData}
               onChange={(e)=>setSearchInputData(e.target.value)}
               placeholder='Property name or location'/><p onClick={handleSearch}>Search</p>
-            </div>
+            </div> */}
+            <SearchComponent2/>
             {resultNumber!==null&&originalDataShow===true?<p style={{color:"#007bff",
             fontWeight:"500",
             cursor:"pointer",
@@ -82,9 +85,9 @@ const prevHouse = (index) => {
             textDecoration:"underline",
             fontSize:"1.2rem"}} onClick={handleClearSearch}>X-Clear Search</p>}
         </div>
-        <div className="container">
+        <div className="PropertiesContainer">
 
-      {originalDataShow===true?    propertiesData2.map((data,index)=>(<div className="card" key={data.id}>
+      {originalDataShow===true?    propertiesData2.map((data,index)=>(<div className="PropertyCard" key={data.id}>
       <div className="carousel">
       <div className="carousel-inner">
                                 <img
@@ -101,17 +104,18 @@ const prevHouse = (index) => {
                             <button className="next" onClick={() => nextHouse(index)}>&#10095;</button>
                         </div>
       <div className="property-details">
-        <h3>{data.propertyType}</h3>
-        <p>Location: {data.propertyLocation}</p>
-        <p>Price: {data.propertyAmount}</p>
+        <h3 style={{color:"rgba(0,0,255,0.7)"}}>{data.propertyType}</h3>
+        <p>{data.bedrooms} bedroom</p>
+        <p>{data.state} {data.propertyLocation}</p>
         <p>{data.category}</p>
-        <button onClick={() => navigate("/contactus")}>Contact Agent</button>
+        <p>Price: {data.propertyAmount} NGN</p>
+        <button onClick={() => navigate("/contactus")}>Contact now</button>
       </div>
     </div>))
 
     :
 
-      propertiesData.map((data,index)=>(<div className="card" key={data.id}>
+      propertiesData.map((data,index)=>(<div className="PropertyCard" key={data.id}>
       <div className="carousel">
       <div className="carousel-inner">
                                 <img
@@ -128,11 +132,12 @@ const prevHouse = (index) => {
                             <button className="next" onClick={() => nextHouse(index)}>&#10095;</button>
                         </div>
       <div className="property-details">
-        <h3>{data.propertyType}</h3>
-        <p>Location: {data.propertyLocation}</p>
-        <p>Price: {data.propertyAmount}</p>
+        <h3 style={{color:"rgba(0,0,255,0.7)"}}>{data.propertyType}</h3>
+        <p>{data.bedrooms} bedroom</p>
+        <p>{data.state} {data.propertyLocation}</p>
         <p>{data.category}</p>
-        <button onClick={() => navigate("/contactus")}>Contact Agent</button>
+        <p>Price: {data.propertyAmount} NGN</p>
+        <button onClick={() => navigate("/contactus")}>Contact now</button>
       </div>
     </div>))
       }

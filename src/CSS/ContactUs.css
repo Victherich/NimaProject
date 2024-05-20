@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     height: auto;
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 50px;
     /* margin-bottom: 10vh; */
     background-color: rgb(240, 240, 255);
@@ -109,7 +109,7 @@
 .ContactUsBodyRight img{
     width: 50%;
     /* height: 100%; */
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .CountryCityStateWrap{
@@ -226,6 +226,15 @@
     padding: 5%;
     text-align: center;
     font-size: 1.2rem;
+}
+
+.FormSubmitUi img{
+    width: 20%;
+}
+
+.FormSubmitUi p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width:80%
 }
 
 .FormSubmitUi button{

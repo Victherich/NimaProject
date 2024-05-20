@@ -5,7 +5,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(240, 240, 255);
+    /* background-color: rgb(240, 240, 255); */
+    background-color: rgb(230, 230, 255);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -46,7 +47,8 @@
 
 
 .about-us {
-    padding: 50px;
+    /* padding: 50px; */
+   
   }
 
 
@@ -56,7 +58,23 @@
     align-items: center;
     width: 100%;
     height: auto;
+    /* padding: 100px; */
+    flex-direction: column;
+    gap:50px;
+    /* background-color: red; */
+  }
+
+  
+
+  .WhoWeAreAndDo{
     padding: 100px;
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
   }
 
   .WhoWeAreAndDoImgWrap{
@@ -69,29 +87,169 @@
     height: auto;
   }
 
-  .WhoWeAreAndDo{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    height: auto;
+  .WhoWeAreTextWrap{
+    width: 50%;
+
+    /* background-color: red; */
   }
 
-  .WhoWeAreAndDo h2{
+  .WhoWeAreTextWrap h1,.WhatWeDo h1{
     color: rgba(0, 0, 255, 0.5);
+    font-size: 3rem;
   }
 
-  .WhoWeAreAndDo p{
-    
-  }
+.WhatWeDo{
+  padding: 100px 100px;
+  width: 100%;
+  background-color: rgba(240, 240, 255, 0.7);
+  background-image: url("../Images/what\ we\ do\ img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* Create a semi-transparent white gradient on top of the background image */
+  background-image: linear-gradient(rgba(220, 220, 255, 0.9), rgba(220, 220, 255, 0.9)), url("../Images/what\ we\ do\ img.jpg");
+  background-blend-mode: overlay; /* Blend the gradient with the background image */
+  /* font-weight: 500; */
 
-  .WhoWeAreAndDo p span{
+}
+  .WhatWeDo p span{
     color: blue;
   }
+
+/* Our Mission and ision Styles */
+
+.OurMissionAndVision{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap:100px; */
+  gap: 50px;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  background-image: url("../Images/mission\ and\ ision\ 2.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 100px;
+  /* position: relative; */
+
+  
+    /* background-blend-mode: overlay;  */
+}
+
+/* .OurMissionAndVision::before{
+  background-color: rgba(0, 0, 0, 0.7);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+} */
+
+
+.OurMission{
+  width: 100%;
+  height: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  z-index: 1;
+  /* padding-top: 100px; */
+  
+}
+
+.OurVision{
+  width: 100%;
+  height: auto;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  /* padding-top: 100px; */
+  z-index: 1;
+  
+  /* background-color: red; */
+}
+
+.OurMission h1, .OurVision h1{
+  font-size: 3rem;
+  color: rgba(255, 255, 255,0.9);
+}
+.OurMission p{
+  font-size: 1rem;
+  width: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.OurVision P{
+  font-size: 1rem;
+  width: 50%;
+  text-align: right;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 50px;
+  border-radius: 20px;
+}
+
+
+
+/* .OurMission{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-direction: column;
+}
+.OurMission h1{
+  font-size: 3rem;
+  color: rgba(0, 0, 255, 0.5);
+}
+
+.OurMissionBody{
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.OurMissionImageWrap{
+  width: 50%;
+  height: auto;
+}
+
+.OurMissionImageWrap img{
+  width: 100%;
+  height: auto;
+}
+
+.OurMissionTextWrap{
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+ */
 
  
   
   .section {
+    padding-top: 100px;
     margin-bottom: 40px;
+    /* background-color: rgba(0, 0, 255, 0.295); */
   }
 
   .section h4{
@@ -189,11 +347,32 @@
     .team-member{
         width: 50%;
     }
+    .WhoWeAreAndDoWrap{
+      gap:0px;
+    }
+    .WhoWeAreAndDo{
+      flex-direction: column;
+      /* padding: 50px 100px; */
+      padding-bottom: 0;
+    }
+    .WhoWeAreAndDoImgWrap{
+      width: 100%;
+    }
+    .WhoWeAreAndDo img{
+      width:100%;
+    }
+    .WhoWeAreTextWrap{
+      width: 100%;
+      /* background-color: red; */
+    }
+    .OurMission p, .OurVision p{
+      width: 100%;
+    }
 }
 
 @media screen and (max-width:834px) {
     .WhoWeAreAndDoWrap{
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 50px;
     }
     .WhoWeAreAndDoImgWrap, .WhoWeAreAndDo{
@@ -207,12 +386,51 @@
         width: 100%;
     }
     .section p{
-    padding: 1px;
+    padding: 0px 15px;
     }
     .WhoWeAreAndDoWrap{
         padding: 0px;
+        /* gap: 0px; */
+    }
+    .WhoWeAreAndDo{
+      padding: 0px 50px;
+      gap:0px;
+    }
+    .WhoWeAreAndDo h1{
+      text-align: center;
     }
     .about-us{
-        padding: 20px;
+        /* padding: 20px; */
     }
+    .WhatWeDo{
+      padding: 50px 50px;
+
+    }
+    .WhatWeDo h1{
+      text-align: center;
+    }
+    .OurMissionAndVision{
+      padding: 50px 10px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .WhoWeAreAndDo h1{
+      font-size: 2rem;
+    }
+    .WhatWeDo h1{
+      font-size: 2rem;
+    }
+    .OurMission p, .OurVision p{
+      padding: 30px;
+    }
+}
+
+@media screen and (max-width:320px) {
+  .AboutUsHeaderWrap h1{
+    font-size: 2.5rem;
+  } 
+  .OurMission h1, .OurVision h1{
+    font-size: 2rem;
+  }
 }

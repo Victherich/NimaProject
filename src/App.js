@@ -10,6 +10,10 @@ import Footer from './component/Footer';
 import OurServices from './component/OurServices';
 import ScrollToTop from "./component/ScrollToTop"
 import Properties from './component/Properties';
+import Career from './component/Career';
+import Blogs from './component/Blogs';
+import { Context } from './component/Context';
+import AboutUsDropDownMenu from './component/AboutUsDropDownMenu';
 
 
 
@@ -20,11 +24,14 @@ const App = () => {
    <Header/>
       <Routes>
           <Route path="/" element={<LandingPage/>}/>
-          <Route path="/aboutus" element={<About/>}/>
+          {/* <Route path="/aboutus" element={<About/>}/> */}
           <Route path="/contactus" element={<ContactUs/>}/>
           <Route path="/ourservices" element={<OurServices/>}/>
           <Route path="/properties" element={<Properties/>}/>
-             
+          <Route path="/career" element={<Career/>}/>
+          <Route path="/blogs" element={<Blogs/>}/>
+          <Route path="/aboutusUI" element={<AboutUsDropDownMenu/>}/>
+          {/* <Route path="/context" element={<Context/>}/> */}
         </Routes>
       <Footer/>
    </BrowserRouter>
