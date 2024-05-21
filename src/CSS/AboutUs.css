@@ -177,10 +177,21 @@
   /* background-color: red; */
 }
 
-.OurMission h1, .OurVision h1{
+.OurMission h1{
   font-size: 3rem;
   color: rgba(255, 255, 255,0.9);
+  text-align: center;
+  margin-left: 175px;
 }
+
+.OurVision h1{
+  font-size: 3rem;
+  color: rgba(255, 255, 255,0.9);
+  text-align: center;
+  margin-right: 175px;
+}
+
+
 .OurMission p{
   font-size: 1rem;
   width: 50%;
@@ -188,12 +199,13 @@
   background-color: rgba(0, 0, 0, 0.8);
   padding: 50px;
   border-radius: 20px;
+  text-align: center;
 }
 
 .OurVision P{
   font-size: 1rem;
   width: 50%;
-  text-align: right;
+  text-align: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 50px;
@@ -278,7 +290,8 @@
   }
   
   .team-member {
-    width: calc(25% - 20px); /* Adjust width according to the number of team members */
+    /* width: calc(25% - 20px);  */
+    width: 18%;
     margin:30px;
     position: relative;
     cursor: pointer;
@@ -319,6 +332,7 @@
     color: #fff;
     text-align: center;
     margin-bottom: 10px;
+    font-size: 0.8rem;
   }
 
 
@@ -345,7 +359,7 @@
 
 @media screen and (max-width:884px) {
     .team-member{
-        width: 50%;
+        width: 25%;
     }
     .WhoWeAreAndDoWrap{
       gap:0px;
@@ -367,6 +381,16 @@
     }
     .OurMission p, .OurVision p{
       width: 100%;
+      
+    }
+
+    .OurMission, .OurVision{
+      align-items: center;
+      
+    }
+    .OurMission h1, .OurVision h1{
+      margin-left: 0px;
+      margin-right: 0px;
     }
 }
 
@@ -381,9 +405,15 @@
     }
 }
 
+@media screen and (max-width:768px){
+  .team-member{
+    width: 30%;
+}
+}
+
 @media screen and (max-width:428px) {
     .team-member{
-        width: 100%;
+        width: 60%;
     }
     .section p{
     padding: 0px 15px;
@@ -415,6 +445,7 @@
 }
 
 @media screen and (max-width:375px) {
+    
     .WhoWeAreAndDo h1{
       font-size: 2rem;
     }

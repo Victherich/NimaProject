@@ -51,7 +51,7 @@ function Footer() {
             </div> */}
             <div className='FooterDesktopContactA'>
             
-            <p><span style={{fontWeight:"500"}}>Head Office:</span> <br/>Plot 4 Hart Avenue,Somitel<br/> Palm grove estate <br/>Port Harcourt <br/>Rivers state <br/> Nigeria</p>
+            <p><span style={{fontWeight:"500"}}>Head Office:</span> <br/>Plot 4 Hart Avenue, Somitel<br/> Palm grove estate <br/>Port Harcourt <br/>Rivers state <br/> Nigeria</p>
         <br/>    <p><span style={{fontWeight:"500"}}>Phone:</span> +234 706 690 8969</p>
             
             </div>

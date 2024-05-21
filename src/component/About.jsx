@@ -1,14 +1,15 @@
 import React from 'react'
 import "../CSS/AboutUs.css"
 import { useState } from 'react';
-import CEOImage from "../Images/CEO AND MD.jpeg"
+import CEOImage from "../Images/CEO AND MD 2.jpeg"
 import s3 from '../Images/real estate development.jpeg'
 import { useNavigate } from 'react-router-dom';
-import ED from "../Images/ED.jpeg"
-import CFO from "../Images/CFO.jpeg"
-import Lawyer from "../Images/Lawyer.jpeg"
-import SalesManager from "../Images/Sales Manager.jpeg"
-import Admin from "../Images/Admin.jpeg"
+import ED from "../Images/ED2.jpeg"
+import CFO from "../Images/CFO2.jpeg"
+import IT from "../Images/IT2.jpeg"
+import Lawyer from "../Images/Lawyer2.jpeg"
+import SalesManager from "../Images/Sales Manager2.jpeg"
+import Admin from "../Images/Admin2.jpeg"
 
 
 const About = () => {
@@ -141,18 +142,23 @@ We envision a future where our comprehensive range of services, spanning oil & g
         <div className="team">
           <div className="team-member" onClick={()=>setShowDescription(1)} onPointerEnter={()=>setShowDescription(1)} onPointerLeave={()=>setShowDescription(false)}>
             <img src={CEOImage} alt="CEO" />
-            <h4>Innocent .M. Agbaeze - CE0 & MD</h4>
+            <h4>Innocent .M. Agbaeze </h4>
+            <p>CE0 & MD</p>
             <div className={`overlay ${showDescription===1 ? "active" : ""}`}>
-              <p>Innocent .M. Agbaeze - CE0 & MD</p>
-              <p>"Our CEO & MD, is a visionary leader with a passion for environmental sustainability and real estate development. His strategic insights drive our company's growth and success."</p>
+              <p>Innocent .M. Agbaeze</p>
+              <p>CE0 & MD</p>
+              <p>"Our CEO & MD, is a visionary leader; His strategic insights drive our company's growth and success."</p>
             </div>
           </div>
+          <br/>
 
           <div className="team-member" onClick={()=>setShowDescription(2)} onPointerEnter={()=>setShowDescription(2)} onPointerLeave={()=>setShowDescription(false)}>
             <img src={ED} alt="ED" />
-            <h4>Jane .C.Agbaeze - ED</h4>
+            <h4>Jane .C.Agbaeze</h4>
+            <p>ED</p>
             <div className={`overlay ${showDescription===2 ? "active" : ""}`}>
-              <p>Jane .C.Agbaeze - ED</p>
+              <p>Jane .C.Agbaeze</p>
+              <p>ED</p>
               <p>
               Dedicated, expert, detail-oriented leader, passionate about excellence and integrity.</p>
             </div>
@@ -160,28 +166,34 @@ We envision a future where our comprehensive range of services, spanning oil & g
 
           <div className="team-member" onClick={()=>setShowDescription(3)} onPointerEnter={()=>setShowDescription(3)} onPointerLeave={()=>setShowDescription(false)}>
             <img src={CFO} alt="CFO" />
-            <h4>Virginia .O.Iwuoha - CFO</h4>
+            <h4>Virginia .O.Iwuoha</h4>
+            <p>CFO</p>
             <div className={`overlay ${showDescription===3 ? "active" : ""}`}>
-              <p>Virginia .O.Iwuoha - CFO</p>
+              <p>Virginia .O.Iwuoha</p>
+              <p>CFO</p>
               <p>The CFO, a financial steward, guides with precision, strategy, and foresight.</p>
             </div>
           </div>
 
-          {/* <div className="team-member" onClick={()=>setShowDescription(4)} onPointerEnter={()=>setShowDescription(4)} onPointerLeave={()=>setShowDescription(false)}>
-            <img src={CEOImage} alt="IT" />
-            <h4>Micheal Okoronkwo - Chief IT Support Specialist</h4>
+          <div className="team-member" onClick={()=>setShowDescription(4)} onPointerEnter={()=>setShowDescription(4)} onPointerLeave={()=>setShowDescription(false)}>
+            <img src={IT} alt="IT" />
+            <h4>Surv. Michael Okoronkwo</h4>
+            <p>Chief IT Officer</p>
             <div className={`overlay ${showDescription===4 ? "active" : ""}`}>
-              <p>Micheal Okoronkwo - Chief IT Support Specialist</p>
+              <p>Surv. Michael Okoronkwo</p>
+              <p>Chief IT Officer</p>
               <p>
               Expert troubleshooter, dedicated to resolving issues swiftly with precision.</p>
             </div>
-          </div> */}
+          </div>
 
           <div className="team-member" onClick={()=>setShowDescription(5)} onPointerEnter={()=>setShowDescription(5)} onPointerLeave={()=>setShowDescription(false)}>
             <img src={Lawyer} alt="Lawyer" />
-            <h4>Barr.Daniel O Ezechukwu  - Lawyer</h4>
+            <h4>Barr. Daniel O Ezechukwu</h4>
+            <p>Lawyer</p>
             <div className={`overlay ${showDescription===5 ? "active" : ""}`}>
-              <p>Barr.Daniel O Ezechukwu  - Lawyer</p>
+              <p>Barr. Daniel O Ezechukwu</p>
+              <p>Lawyer</p>
               <p>
               Our Lawyer: Diligent, knowledgeable, ethical; safeguarding legal interests with integrity.</p>
             </div>
@@ -189,9 +201,11 @@ We envision a future where our comprehensive range of services, spanning oil & g
 
           <div className="team-member" onClick={()=>setShowDescription(6)} onPointerEnter={()=>setShowDescription(6)} onPointerLeave={()=>setShowDescription(false)}>
             <img src={SalesManager} alt="SalesManager" />
-            <h4>Gold Ntinu - Sales / Marketing Manager</h4>
+            <h4>Gold Ntinu</h4>
+            <p>Sales / Marketing Manager</p>
             <div className={`overlay ${showDescription===6 ? "active" : ""}`}>
-              <p>Gold Ntinu - Sales / Marketing Manager</p>
+              <p>Gold Ntinu</p>
+              <p>Sales / Marketing Manager</p>
               <p>
               Dynamic, strategic leader orchestrating growth, innovation, and client relationships expertly.</p>
             </div>
@@ -199,9 +213,11 @@ We envision a future where our comprehensive range of services, spanning oil & g
 
           <div className="team-member" onClick={()=>setShowDescription(7)} onPointerEnter={()=>setShowDescription(7)} onPointerLeave={()=>setShowDescription(false)}>
             <img src={Admin} alt="Admin" />
-            <h4>Priscilla Achiaw Owusu - Admin</h4>
+            <h4>Priscilla Achiaw Owusu</h4>
+            <p>Admin</p>
             <div className={`overlay ${showDescription===7 ? "active" : ""}`}>
-              <p>Priscilla Achiaw Owusu - Admin</p>
+              <p>Priscilla Achiaw Owusu</p>
+              <p>Admin</p>
               <p>
               Efficient, organized, diligent; ensures smooth operations with precision and professionalism.</p>
             </div>

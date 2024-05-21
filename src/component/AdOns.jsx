@@ -51,11 +51,10 @@ const AdOns = () => {
                     <p>UNDERWATER WELDING</p>
                     </div> */}
 
-                <div className='OurService'>
+                {/* <div className='OurService'>
                     <FaBuilding className='OurServiceBodyIcon'/>
                     <p>CONSTRUCTION</p>
-                    {/* <p>Designing and implementing APIs to seamlessly integrate your systems and services.</p> */}
-                </div>
+                </div> */}
 
                 <div className='OurService'>
                     <FaBuildingCircleCheck className='OurServiceBodyIcon'/>

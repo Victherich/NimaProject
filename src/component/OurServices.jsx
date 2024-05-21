@@ -80,13 +80,13 @@ function OurServices() {
           </div>
         </div>
 
-        <div className="service-card animate__animated animate__slideInLeft">
+        {/* <div className="service-card animate__animated animate__slideInLeft">
           <img src={Img5} alt="Service 1" />
           <div className="service-details">
             <h3>Oil and Gas services</h3>
             <p>We specialize in tailored solutions for the oil and gas industry, ensuring operational efficiency, regulatory compliance, and environmental stewardship throughout the lifecycle. Our expertise spans exploration, drilling, production, and distribution.</p>
           </div>
-        </div>
+        </div> */}
 
         <div className="service-card animate__animated animate__slideInRight">
           <img src={Img6} alt="Service 1" />
