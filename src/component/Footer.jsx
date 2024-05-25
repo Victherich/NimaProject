@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import '../CSS/Footer.css'; // import your CSS file
 import { FaBeer, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 // import Logo from "../Images/Nima_Logo_dummy-removebg-preview.png"
-import Logo from "../Images/Nima Logo  1.jpg"
+// import Logo from "../Images/Nima Logo  1.jpg"
+import Logo from "../Images/nima logo3 no bg.png"
+
 
 function Footer() {
 

@@ -124,7 +124,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* gap:100px; */
   gap: 50px;
   flex-direction: column;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
@@ -132,11 +131,9 @@
   background-position: center;
   background-size: cover;
   padding: 100px;
-  /* position: relative; */
-
-  
-    /* background-blend-mode: overlay;  */
 }
+
+
 
 /* .OurMissionAndVision::before{
   background-color: rgba(0, 0, 0, 0.7);
@@ -151,50 +148,56 @@
 
 
 .OurMission{
-  width: 100%;
+  width: 50%;
   height: auto;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content:center;
+  align-items:center;
   display: flex;
   flex-direction: column;
   gap:10px;
   z-index: 1;
+  /* background-color: red; */
   /* padding-top: 100px; */
+  margin-right: 50%;
   
 }
 
 .OurVision{
-  width: 100%;
+  width: 50%;
   height: auto;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap:10px;
   /* padding-top: 100px; */
   z-index: 1;
+  margin-left: 50%;
   
   /* background-color: red; */
+}
+
+.OurVision:nth-child(2){
+  /* justify-content: flex-end; */
+  /* align-items: flex-end; */
 }
 
 .OurMission h1{
   font-size: 3rem;
   color: rgba(255, 255, 255,0.9);
   text-align: center;
-  margin-left: 175px;
 }
 
 .OurVision h1{
   font-size: 3rem;
   color: rgba(255, 255, 255,0.9);
   text-align: center;
-  margin-right: 175px;
 }
 
 
 .OurMission p{
   font-size: 1rem;
-  width: 50%;
+  width: 100%;
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 50px;
@@ -204,7 +207,7 @@
 
 .OurVision P{
   font-size: 1rem;
-  width: 50%;
+  width: 100%;
   text-align: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
@@ -261,12 +264,17 @@
   .section {
     padding-top: 100px;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* background-color: rgba(0, 0, 255, 0.295); */
   }
 
   .section h4{
-    color: rgba(0, 0, 255, 0.5);
+    color: rgba(0, 0, 255, 0.8);
     text-align: center;
+    font-size: 1.1rem;
   }
 
   .section h2{
@@ -286,12 +294,14 @@
     justify-content: center;
     align-items: center;
     /* background-color: red; */
+    flex-wrap: wrap;
     width: 100%;
+    padding: 0px 0px;
   }
   
   .team-member {
     /* width: calc(25% - 20px);  */
-    width: 18%;
+    width: 280px;
     margin:30px;
     position: relative;
     cursor: pointer;
@@ -359,7 +369,7 @@
 
 @media screen and (max-width:884px) {
     .team-member{
-        width: 25%;
+        /* width: 27%; */
     }
     .WhoWeAreAndDoWrap{
       gap:0px;
@@ -381,11 +391,14 @@
     }
     .OurMission p, .OurVision p{
       width: 100%;
-      
+     
     }
 
     .OurMission, .OurVision{
       align-items: center;
+      margin-left: 0%;
+      margin-right: 0%;
+      width: 100%;
       
     }
     .OurMission h1, .OurVision h1{
@@ -407,13 +420,13 @@
 
 @media screen and (max-width:768px){
   .team-member{
-    width: 30%;
+    /* width: 30%; */
 }
 }
 
 @media screen and (max-width:428px) {
     .team-member{
-        width: 60%;
+        /* width: 60%; */
     }
     .section p{
     padding: 0px 15px;
@@ -455,6 +468,9 @@
     .OurMission p, .OurVision p{
       padding: 30px;
     }
+    .team-member{
+      width: 250px;
+  }
 }
 
 @media screen and (max-width:320px) {
@@ -464,4 +480,8 @@
   .OurMission h1, .OurVision h1{
     font-size: 2rem;
   }
+  .team-member{
+    /* width: 67%; */
+}
+  
 }

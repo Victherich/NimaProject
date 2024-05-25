@@ -30,7 +30,7 @@
 }
 
 .LogoWrap img{
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
@@ -251,6 +251,9 @@
     }
     .MobileMenuWrap a{
         margin: 15px;
+       }
+       .LogoWrap{
+        width: 15%;
        }
  }
 

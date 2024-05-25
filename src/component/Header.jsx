@@ -4,7 +4,9 @@ import { Context } from './Context';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 // import Logo from "../Images/Nima_Logo_dummy-removebg-preview.png"
-import Logo from "../Images/Nima Logo  1.jpg"
+import Logo from "../Images/nima logo3 no bg.png"
+// import Logo from "../Images/nima logo3 bg.jpeg"
+// import Logo from "../Images/"
 import { FaArrowDown, FaBeer, FaFacebook, FaHamburger, FaInstagram, FaTwitter } from "react-icons/fa";
 import "animate.css"
 import { useRef } from 'react';

@@ -5,7 +5,14 @@ import Img2 from "../Images/house2.jpg"
 import Img3 from "../Images/house3.jpg"
 import Img4 from "../Images/house4.jpg"
 import Swal from "sweetalert2"
-
+import PropertyA1 from "../Images/propertyA1.jpeg"
+import PropertyA2 from "../Images/propertyA2.jpeg"
+import PropertyA3 from "../Images/propertyA3.jpeg"
+import PropertyA4 from "../Images/propertyA4.jpeg"
+import PropertyA5 from "../Images/propertyA5.jpg"
+import PropertyA6 from "../Images/propertyA6.jpg"
+import PropertyA7 from "../Images/propertyA7.jpg"
+import PropertyA8 from "../Images/propertyA8.jpg"
 
 export const Context = createContext();
 
@@ -117,35 +124,35 @@ const ContextProvider = ({children}) => {
       {
           "id": 8,
           "propertyType": "Duplex",
-          "propertyAmount": 20000000,
-          "propertyLocation": "Asaba",
+          "propertyAmount": 160000000,
+          "propertyLocation": "Port Harcourt",
           "category": "For sale",
-          "propertyDescription": "Experience the epitome of luxury living in this exquisite 2 bedroom duplex located in the prestigious neighborhood of Ikoyi. Boasting opulent interiors, bespoke furnishings, and panoramic views of the city skyline, it offers a lifestyle of unparalleled elegance and sophistication. Indulge in world-class amenities and unparalleled convenience in this exclusive address.",
-          "pic1": `${Img1}`,
-          "pic2": `${Img2}`,
-          "pic3": `${Img3}`,
-          "pic4": `${Img4}`,
-          "bedrooms":4,
-          "state":"Delta"
+          "propertyDescription": "Tastefully fininshed 5 bedrooon duplex with 2 rooms BQ on 2 plots of land for sale at Omarchi, off SARS road, Port Harcourt",
+          "pic1": `${PropertyA1}`,
+          "pic2": `${PropertyA2}`,
+          "pic3": `${PropertyA3}`,
+          "pic4": `${PropertyA4}`,
+          "bedrooms":5,
+          "state":"Rivers"
       },
       {
           "id": 9,
           "propertyType": "Bungalow",
-          "propertyAmount": 1000000,
+          "propertyAmount": 2000000,
           "propertyLocation": "Asaba",
-          "category": "For rent",
+          "category": "For sale",
           "propertyDescription": "Discover the perfect blend of comfort and convenience in this cozy bungalow located in the heart of Agege. Featuring spacious interiors, a well-manicured garden, and ample outdoor space, it offers a peaceful retreat from the urban hustle. With easy access to amenities and transportation, it provides a lifestyle of ease and relaxation.",
-          "pic1": `${Img1}`,
-          "pic2": `${Img2}`,
-          "pic3": `${Img3}`,
-          "pic4": `${Img4}`,
-          "bedrooms":2,
+          "pic1": `${PropertyA5}`,
+          "pic2": `${PropertyA6}`,
+          "pic3": `${PropertyA7}`,
+          "pic4": `${PropertyA8}`,
+          "bedrooms":3,
           "state":"Delta"
       },
       {
           "id": 10,
           "propertyType": "Duplex",
-          "propertyAmount": 40000000,
+          "propertyAmount": 10000000,
           "propertyLocation": "Abuja",
           "category": "For rent",
           "propertyDescription": "Experience urban living at its finest in this stylish 2 bedroom duplex located in the vibrant neighborhood of Ikeja. With its contemporary design, spacious layout, and premium finishes, it offers a luxurious lifestyle in the heart of the city. Enjoy easy access to amenities, entertainment, and transportation in this prime location.",

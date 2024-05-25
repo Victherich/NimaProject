@@ -1,7 +1,7 @@
 import React from 'react'
 import "../CSS/AboutUs.css"
 import { useState } from 'react';
-import CEOImage from "../Images/CEO AND MD 2.jpeg"
+import CEOImage from "../Images/ceonewpic.jpeg"
 import s3 from '../Images/real estate development.jpeg'
 import { useNavigate } from 'react-router-dom';
 import ED from "../Images/ED2.jpeg"
@@ -10,6 +10,8 @@ import IT from "../Images/IT2.jpeg"
 import Lawyer from "../Images/Lawyer2.jpeg"
 import SalesManager from "../Images/Sales Manager2.jpeg"
 import Admin from "../Images/Admin2.jpeg"
+import hr from "../Images/hr pic.jpeg"
+import hse from "../Images/hse pic.jpeg"
 
 
 const About = () => {
@@ -139,8 +141,8 @@ We envision a future where our comprehensive range of services, spanning oil & g
       <section className="section" id="ourteam">
         <h2>Our Team</h2>
         <p>Meet our team with diverse ranges of expertise spanning environmental sciences, real estate development, ecological consulting, and sustainable land use planning. Our team is united by a shared commitment to excellence and innovation.</p>
-        <div className="team">
-          <div className="team-member" onClick={()=>setShowDescription(1)} onPointerEnter={()=>setShowDescription(1)} onPointerLeave={()=>setShowDescription(false)}>
+        
+        <div className="team-member" onClick={()=>setShowDescription(1)} onPointerEnter={()=>setShowDescription(1)} onPointerLeave={()=>setShowDescription(false)}>
             <img src={CEOImage} alt="CEO" />
             <h4>Innocent .M. Agbaeze </h4>
             <p>CE0 & MD</p>
@@ -150,6 +152,10 @@ We envision a future where our comprehensive range of services, spanning oil & g
               <p>"Our CEO & MD, is a visionary leader; His strategic insights drive our company's growth and success."</p>
             </div>
           </div>
+
+        <div className="team">
+          
+          <br/>
           <br/>
 
           <div className="team-member" onClick={()=>setShowDescription(2)} onPointerEnter={()=>setShowDescription(2)} onPointerLeave={()=>setShowDescription(false)}>
@@ -220,6 +226,30 @@ We envision a future where our comprehensive range of services, spanning oil & g
               <p>Admin</p>
               <p>
               Efficient, organized, diligent; ensures smooth operations with precision and professionalism.</p>
+            </div>
+          </div>
+
+          <div className="team-member" onClick={()=>setShowDescription(8)} onPointerEnter={()=>setShowDescription(8)} onPointerLeave={()=>setShowDescription(false)}>
+            <img src={hr} alt="Admin" />
+            <h4>#Name</h4>
+            <p>Human Resource - HR</p>
+            <div className={`overlay ${showDescription===8 ? "active" : ""}`}>
+              <p>#Name</p>
+              <p>Human Resource - HR</p>
+              <p>
+              Empathetic, strategic, and efficient; fosters a positive work environment and ensures optimal talent management with dedication and professionalism.</p>
+            </div>
+          </div>
+
+          <div className="team-member" onClick={()=>setShowDescription(9)} onPointerEnter={()=>setShowDescription(9)} onPointerLeave={()=>setShowDescription(false)}>
+            <img src={hse} alt="Admin" />
+            <h4>Micheal  Jones</h4>
+            <p>Health, Safety and Environmental Officer - HSE</p>
+            <div className={`overlay ${showDescription===9 ? "active" : ""}`}>
+              <p>Micheal  Jones</p>
+              <p>Health, Safety and Environmental Officer - HSE</p>
+              <p>
+              Diligent, meticulous, and proactive; safeguards health, safety, and environmental standards with unwavering commitment and expertise.</p>
             </div>
           </div>
           {/* Repeat the above structure for other team members */}

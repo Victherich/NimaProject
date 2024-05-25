@@ -10,8 +10,11 @@ import FeaturedProperties from '../component/FeaturedProperties'
 import AdOns from '../component/AdOns'
 import Projects from '../component/Projects'
 import Gallery from '../component/Gallery'
+import { useNavigate } from 'react-router-dom'
+import OurProductCollectionForHome from '../component/OurProductCollectionForHome'
 
 const LandingPage = () => {
+  const navigate = useNavigate()
   return (
     <div className='LandingPage'>
         
@@ -19,6 +22,7 @@ const LandingPage = () => {
         <OurServices/>
         {/* <AdOns/> */}
         <FeaturedProperties/>
+        <OurProductCollectionForHome/>
         <Projects/>
         <Gallery/>
         <About/>

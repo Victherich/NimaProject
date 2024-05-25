@@ -14,6 +14,7 @@ import Career from './component/Career';
 import Blogs from './component/Blogs';
 import { Context } from './component/Context';
 import AboutUsDropDownMenu from './component/AboutUsDropDownMenu';
+import OurProductCollections from './component/OurProductCollections';
 
 
 
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/career" element={<Career/>}/>
           <Route path="/blogs" element={<Blogs/>}/>
           <Route path="/aboutusUI" element={<AboutUsDropDownMenu/>}/>
+          <Route path="/ourproductcollections" element={<OurProductCollections/>}/>
           {/* <Route path="/context" element={<Context/>}/> */}
         </Routes>
       <Footer/>
