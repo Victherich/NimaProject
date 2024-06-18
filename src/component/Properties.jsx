@@ -105,7 +105,9 @@ const prevHouse = (index) => {
                         </div>
       <div className="property-details">
         <h3 style={{color:"rgba(0,0,255,0.7)"}}>{data.propertyType}</h3>
+        
         <p>{data.bedrooms} bedroom</p>
+        <p>{data.Addition}</p>
         <p>{data.state} {data.propertyLocation}</p>
         <p>{data.category}</p>
         <p>Price: {data.propertyAmount} NGN</p>
@@ -134,7 +136,9 @@ const prevHouse = (index) => {
       <div className="property-details">
         <h3 style={{color:"rgba(0,0,255,0.7)"}}>{data.propertyType}</h3>
         <p>{data.bedrooms} bedroom</p>
+        <p>{data.Addition}</p>
         <p>{data.state} {data.propertyLocation}</p>
+
         <p>{data.category}</p>
         <p>Price: {data.propertyAmount} NGN</p>
         <button onClick={() => navigate("/contactus")}>Contact now</button>

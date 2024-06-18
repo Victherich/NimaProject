@@ -13,6 +13,10 @@ import PropertyA5 from "../Images/propertyA5.jpg"
 import PropertyA6 from "../Images/propertyA6.jpg"
 import PropertyA7 from "../Images/propertyA7.jpg"
 import PropertyA8 from "../Images/propertyA8.jpg"
+import pb1 from "../Images/pb1.jpeg"
+import pb2 from "../Images/pb2.jpeg"
+import pb3 from "../Images/pb3.jpeg"
+import pb4 from "../Images/pb4.jpeg"
 
 export const Context = createContext();
 
@@ -124,6 +128,8 @@ const ContextProvider = ({children}) => {
       {
           "id": 8,
           "propertyType": "Duplex",
+
+          "Addition":"With 2 rooms BQ on 2 plots of land",
           "propertyAmount": 160000000,
           "propertyLocation": "Port Harcourt",
           "category": "For sale",
@@ -137,21 +143,23 @@ const ContextProvider = ({children}) => {
       },
       {
           "id": 9,
-          "propertyType": "Bungalow",
-          "propertyAmount": 2000000,
-          "propertyLocation": "Asaba",
+          "propertyType": "Duplex",
+          "Addition":"With 3 rooms BQ on 3 plots of land",
+          "propertyAmount": 150000000,
+          "propertyLocation": "Port Harcourt",
           "category": "For sale",
-          "propertyDescription": "Discover the perfect blend of comfort and convenience in this cozy bungalow located in the heart of Agege. Featuring spacious interiors, a well-manicured garden, and ample outdoor space, it offers a peaceful retreat from the urban hustle. With easy access to amenities and transportation, it provides a lifestyle of ease and relaxation.",
-          "pic1": `${PropertyA5}`,
-          "pic2": `${PropertyA6}`,
-          "pic3": `${PropertyA7}`,
-          "pic4": `${PropertyA8}`,
-          "bedrooms":3,
-          "state":"Delta"
+          "propertyDescription": "6 bedroom duplex and 3 BQ on 3 plots of land for sale at Rumuola by isiewu junction. Title:C of O (Certificate of Occupancy",
+          "pic1": `${pb1}`,
+          "pic2": `${pb2}`,
+          "pic3": `${pb3}`,
+          "pic4": `${pb4}`,
+          "bedrooms":6,
+          "state":"Rivers"
       },
       {
           "id": 10,
           "propertyType": "Duplex",
+          "Addition":"In a nice location",
           "propertyAmount": 10000000,
           "propertyLocation": "Abuja",
           "category": "For rent",

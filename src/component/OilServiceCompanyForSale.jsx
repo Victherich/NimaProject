@@ -27,7 +27,7 @@ const OilServiceCompanyForSale = () => {
                 <source src="/video1.mp4" type="video/mp4" />
             </video> */}
 
-<ReactPlayer url="/video1.mp4" controls width="100%" style={{backgroundColor:"rgba(0,0,255,0.5)"}}/>
+<ReactPlayer url="/video1.mp4" controls width="100%" style={{backgroundColor:"rgba(0,0,0,0.7)"}}/>
             
         
           </div>

@@ -68,7 +68,7 @@ function OurServices() {
           <img src={Img3} alt="Service 1" />
           <div className="service-details">
             <h3>Real Estate Development</h3>
-            <p>Nima Geo specializes in real estate development projects, from residential to commercial properties. Our services encompass site selection, feasibility studies, project management, and more, ensuring successful development ventures.</p>
+            <p>We specializes in real estate development projects, from residential to commercial properties. Our services encompass site selection, feasibility studies, project management, and more, ensuring successful development ventures.</p>
           </div>
         </div>
 
@@ -91,7 +91,7 @@ function OurServices() {
         <div className="service-card animate__animated animate__slideInRight">
           <img src={Img6} alt="Service 1" />
           <div className="service-details">
-            <h3>Environmental Consultancy Services:</h3>
+            <h3>Environmental Consultancy Services</h3>
             <p>Our consultancy offers strategic advice and technical expertise to address environmental challenges, ensuring regulatory compliance and sustainability. From assessments to mitigation strategies, we deliver solutions that protect the environment and enhance business performance.</p>
           </div>
         </div>

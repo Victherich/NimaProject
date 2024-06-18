@@ -45,9 +45,9 @@ const About = () => {
                   <div className="WhoWeAreTextWrap">
                       <h1>Who We Are</h1>
                         <p>
-                        Nima Geo Environmental and Real Estate Services is a leading firm dedicated to sustainable solutions in environmental consulting, real estate development, and land use planning. Established with a commitment to excellence and innovation, we strive to make a positive impact by addressing complex environmental challenges while fostering economic growth and social responsibility.
+                        Nima Geoenviromental services limited is a leading firm dedicated to sustainable solutions in environmental consulting, real estate development, and land use planning. Established with a commitment to excellence and innovation, we strive to make a positive impact by addressing complex environmental challenges while fostering economic growth and social responsibility.
 <br/><br/>
-At Nima Geo, we believe in the power of collaboration and integrity. Our team comprises passionate professionals with diverse backgrounds in environmental sciences, real estate development, ecological consulting, and sustainable land use planning. Together, we work tirelessly to provide innovative solutions that meet the needs of our clients and communities.
+At Nima Geoenviromental services limited, we believe in the power of collaboration and integrity. Our team comprises passionate professionals with diverse backgrounds in environmental sciences, real estate development, ecological consulting, and sustainable land use planning. Together, we work tirelessly to provide innovative solutions that meet the needs of our clients and communities.
 <br/><br/>
 Driven by our core values of environmental stewardship and sustainability, we aim to create a harmonious balance between development and nature. Our dedication to quality, integrity, and client satisfaction sets us apart as a trusted partner in the pursuit of sustainable development and environmental preservation.
                       </p>
@@ -60,7 +60,7 @@ Driven by our core values of environmental stewardship and sustainability, we ai
             <div className="WhatWeDo" id="whatwedo">
                  <h1>What We Do</h1>
                  <p>
-                 At Nima Geo Environmental and Real Estate Services, we are dedicated to providing comprehensive and sustainable solutions that meet the evolving needs of our clients and communities. Our value proposition lies in our commitment to excellence, innovation, and environmental stewardship, which sets us apart as a trusted partner in the pursuit of sustainable development.
+                 At Nima Geoenviromental services limited, we are dedicated to providing comprehensive and sustainable solutions that meet the evolving needs of our clients and communities. Our value proposition lies in our commitment to excellence, innovation, and environmental stewardship, which sets us apart as a trusted partner in the pursuit of sustainable development.
 <br/><br/>
 <span>1. Integrated Expertise:</span>
 With a multidisciplinary team of professionals specializing in environmental consulting, real estate development, and land use planning, we offer integrated solutions that address complex challenges at the intersection of environment and development.
@@ -93,7 +93,7 @@ We believe in the power of collaboration and partnership. By fostering strong re
 <span>8. Exceptional Service:</span>
 Our dedication to excellence extends beyond the completion of a project. We strive to exceed client expectations at every turn, providing responsive, reliable, and transparent service that builds trust and fosters long-term relationships.
 <br/><br/>
-At Nima Geo, we are more than just a consulting firm. We are catalysts for progress, shaping a future where environmental sustainability and economic prosperity go hand in hand. Join us in creating a world where development is synonymous with sustainability, leaving a legacy of lasting impact for generations to come.
+At Nima Geoenviromental services limited, we are more than just a consulting firm. We are catalysts for progress, shaping a future where environmental sustainability and economic prosperity go hand in hand. Join us in creating a world where development is synonymous with sustainability, leaving a legacy of lasting impact for generations to come.
                   </p>     
 }            
 
@@ -106,13 +106,13 @@ At Nima Geo, we are more than just a consulting firm. We are catalysts for progr
       <div className='OurMissionAndVision'>
         <div className='OurMission' id="ourmission">
             <h1>Our Mission</h1>
-            <p>At Nima Geo Environmental and Real Estate Services, our mission is to be a beacon of excellence in the realms of oil & gas services, environmental consultancy, waste management, project management, ecological consulting, environmental site assessments, sustainable land use planning, and real estate development. We are committed to safeguarding the environment, promoting sustainable practices, and delivering exceptional value to our clients and communities. Through innovation, collaboration, and a steadfast dedication to integrity, we aim to surpass expectations, drive positive change, and cultivate a harmonious balance between development and environmental conservation.
+            <p>At Nima Geoenviromental services limited, our mission is to be a beacon of excellence in the realms of oil & gas services, environmental consultancy, waste management, project management, ecological consulting, environmental site assessments, sustainable land use planning, and real estate development. We are committed to safeguarding the environment, promoting sustainable practices, and delivering exceptional value to our clients and communities. Through innovation, collaboration, and a steadfast dedication to integrity, we aim to surpass expectations, drive positive change, and cultivate a harmonious balance between development and environmental conservation.
               </p>
         </div>
 
         <div className='OurVision' id="ourvision">
             <h1>Our Vision</h1>
-            <p>Nima Geo Environmental and Real Estate Services envisions a world where sustainable development is the cornerstone of progress, where every action contributes to the preservation and enhancement of our planet's ecological integrity. Our vision is to be at the forefront of this movement, leading by example through our innovative solutions and unwavering commitment to environmental stewardship.
+            <p>Nima Geoenviromental services limited envisions a world where sustainable development is the cornerstone of progress, where every action contributes to the preservation and enhancement of our planet's ecological integrity. Our vision is to be at the forefront of this movement, leading by example through our innovative solutions and unwavering commitment to environmental stewardship.
 
 We envision a future where our comprehensive range of services, spanning oil & gas solutions, environmental consultancy, waste management, project management, ecological consulting, environmental site assessments, sustainable land use planning, and real estate development, serve as pillars of sustainability, driving positive change and inspiring others to follow suit.
 
@@ -231,10 +231,10 @@ We envision a future where our comprehensive range of services, spanning oil & g
 
           <div className="team-member" onClick={()=>setShowDescription(8)} onPointerEnter={()=>setShowDescription(8)} onPointerLeave={()=>setShowDescription(false)}>
             <img src={hr} alt="Admin" />
-            <h4>#Name</h4>
+            <h4>Tirik Mohamed</h4>
             <p>Human Resource - HR</p>
             <div className={`overlay ${showDescription===8 ? "active" : ""}`}>
-              <p>#Name</p>
+              <p>Tirik Mohamed</p>
               <p>Human Resource - HR</p>
               <p>
               Empathetic, strategic, and efficient; fosters a positive work environment and ensures optimal talent management with dedication and professionalism.</p>
@@ -244,7 +244,7 @@ We envision a future where our comprehensive range of services, spanning oil & g
           <div className="team-member" onClick={()=>setShowDescription(9)} onPointerEnter={()=>setShowDescription(9)} onPointerLeave={()=>setShowDescription(false)}>
             <img src={hse} alt="Admin" />
             <h4>Micheal  Jones</h4>
-            <p>Health, Safety and Environmental Officer - HSE</p>
+            <p>Health, Safety & Environmental Officer-HSE</p>
             <div className={`overlay ${showDescription===9 ? "active" : ""}`}>
               <p>Micheal  Jones</p>
               <p>Health, Safety and Environmental Officer - HSE</p>

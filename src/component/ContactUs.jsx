@@ -2,7 +2,7 @@ import React, { useState ,useEffect} from 'react'
 import "../CSS/ContactUs.css"
 // import Logo from "../Images/Nima_Logo_dummy-removebg-preview.png"
 // import Logo from "../Images/Nima Logo  1.jpg"
-import Logo from "../Images/nima logo3 no bg.png"
+import Logo from "../Images/Nima_Logo_4-removebg-preview.png"
 import { FaBackward, FaEraser } from 'react-icons/fa6'
 import { FaClosedCaptioning } from 'react-icons/fa'
 import { useForm, ValidationError } from '@formspree/react';

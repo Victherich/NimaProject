@@ -30,7 +30,7 @@ const Career = () => {
             <FaBoxOpen className="CareerIcon"/>
             <div className="text">
               <h3>Diverse Opportunities:</h3>
-              <p> Nima Geo offers varied roles in environmental consulting and real estate, providing employees with diverse career paths and growth opportunities.</p>
+              <p> Nima Geoenviromental services limited offers varied roles in environmental consulting and real estate, providing employees with diverse career paths and growth opportunities.</p>
             </div>
           </div>
 
@@ -38,7 +38,7 @@ const Career = () => {
             <FaSquareSteam className="CareerIcon"/>
             <div className="text">
               <h3>Commitment to Sustainability:</h3>
-              <p> Employees contribute to impactful sustainability projects, aligning with Nima Geo's dedication to environmental conservation and responsible real estate practices.</p>
+              <p> Employees contribute to impactful sustainability projects, aligning with Our dedication to environmental conservation and responsible real estate practices.</p>
             </div>
           </div>
 
@@ -46,7 +46,7 @@ const Career = () => {
             <FaBox className="CareerIcon"/>
             <div className="text">
               <h3>Professional Development:</h3>
-              <p>Nima Geo fosters employee growth through training and mentorship, empowering individuals to advance their skills and excel in their careers.</p>
+              <p>Nima Geoenviromental services limited fosters employee growth through training and mentorship, empowering individuals to advance their skills and excel in their careers.</p>
             </div>
           </div>
 
@@ -54,7 +54,7 @@ const Career = () => {
             <FaIdCard className="CareerIcon"/>
             <div className="text">
               <h3>Collaborative Work Environment:</h3>
-              <p>Encouraging teamwork and inclusivity, Nima Geo cultivates a supportive culture where diverse perspectives thrive and innovation flourishes.</p>
+              <p>Encouraging teamwork and inclusivity, Nima Geoenviromental services limited cultivates a supportive culture where diverse perspectives thrive and innovation flourishes.</p>
             </div>
           </div>
 
@@ -62,7 +62,7 @@ const Career = () => {
             <FaDirections className="CareerIcon"/>
             <div className="text">
               <h3>Industry Leadership: </h3>
-              <p>As a leading player in environmental and real estate sectors, Nima Geo offers employees the chance to work on prestigious projects and be part of groundbreaking initiatives.</p>
+              <p>As a leading player in environmental and real estate sectors, Nima Geoenviromental services limited offers employees the chance to work on prestigious projects and be part of groundbreaking initiatives.</p>
             </div>
           </div>
 
@@ -70,7 +70,7 @@ const Career = () => {
             <FaHeart className="CareerIcon"/>
             <div className="text">
               <h3>Employee Wellbeing:</h3>
-              <p>Valuing health and happiness, Nima Geo prioritizes employee wellbeing with competitive benefits, flexible work arrangements, and initiatives supporting work-life balance.</p>
+              <p>Valuing health and happiness, Nima Geoenviromental services limited prioritizes employee wellbeing with competitive benefits, flexible work arrangements, and initiatives supporting work-life balance.</p>
             </div>
           </div>
           {/* Repeat the CareerCard structure for the remaining points */}

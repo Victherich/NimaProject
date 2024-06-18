@@ -3,7 +3,7 @@ import '../CSS/Footer.css'; // import your CSS file
 import { FaBeer, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 // import Logo from "../Images/Nima_Logo_dummy-removebg-preview.png"
 // import Logo from "../Images/Nima Logo  1.jpg"
-import Logo from "../Images/nima logo3 no bg.png"
+import Logo from "../Images/Nima_Logo_4-removebg-preview.png"
 
 
 function Footer() {
@@ -14,7 +14,7 @@ function Footer() {
       <div className="footer__container">
         <div className="footer__logo">
           <img src={Logo} alt="Nima Geo Environmental and Real Estate Services" />
-          <h1>Nima Geo Environmental and Real Estate Services</h1>
+          <h1>Nima Geoenviromental services limited</h1>
           <p> info@nimageoenviromental.net</p>
         </div>
         <div className="footer__contact">
@@ -39,7 +39,7 @@ function Footer() {
         <div className="footer__social">
           <p style={{fontWeight:"bold",}}>Follow Us:</p>
           <ul>
-            <li><a href="https://www.facebook.com/nimageo" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"><FaFacebook className='FbIcon'/></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61560348502889" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"><FaFacebook className='FbIcon'/></i></a></li>
             <li><a href="https://www.twitter.com/nimageo" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"><FaTwitter className='TwitterIcon'/></i></a></li>
             <li><a href="https://www.instagram.com/nimageo" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"><FaInstagram className='InstagramIcon'/></i></a></li>
             {/* Add more social media icons as needed */}

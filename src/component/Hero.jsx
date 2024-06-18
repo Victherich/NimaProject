@@ -40,7 +40,7 @@ useEffect(() => {
                         <div className='HeroMaskTextWrap'>
                         <div className='HeroMaskTextLeft'>
                         <h1>NIMA</h1>
-                        <h2>Geo-Environmental and Real Estate services</h2>
+                        <h2>Geoenviromental services limited</h2>
                         </div>
                         {/* <div className='HeroMaskCenter'>
                                 <input type="text" placeholder='Search'/> <button>Search</button>
@@ -61,7 +61,7 @@ useEffect(() => {
         <div className='HeroMaskTextWrap'>
         <div className='HeroMaskTextLeft'>
                         <h1>NIMA</h1>
-                        <h2>Geo-Environmental and Real Estate services</h2>
+                        <h2>Geoenviromental services limited</h2>
                         </div>
                         {/* <SearchBar/> */}
                         <div className='HeroMaskTextRight animate__animated animate__fadeIn'>
@@ -80,7 +80,7 @@ useEffect(() => {
         <div className='HeroMaskTextWrap'>
         <div className='HeroMaskTextLeft'>
                         <h1>NIMA</h1>
-                        <h2>Geo-Environmental and Real Estate services</h2>
+                        <h2>Geoenviromental services limited</h2>
                         </div>
                         {/* <SearchBar/> */}
                         <div className='HeroMaskTextRight animate__animated animate__fadeIn'>
@@ -99,7 +99,7 @@ useEffect(() => {
         <div className='HeroMaskTextWrap'>
         <div className='HeroMaskTextLeft'>
                         <h1>NIMA</h1>
-                        <h2>Geo-Environmental and Real Estate services</h2>
+                        <h2>Geoenviromental services limited</h2>
                         </div>
                         {/* <SearchBar/> */}
                         <div className='HeroMaskTextRight animate__animated animate__fadeIn'>
